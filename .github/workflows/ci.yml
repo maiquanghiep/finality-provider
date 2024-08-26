@@ -14,7 +14,7 @@ jobs:
       run-integration-tests: true
       run-lint: true
       run-build: true
-      private-repos: "github.com/babylonlabs-io/imagination-repo-to-test,github.com/babylonlabs-io/babylon-private"
+      go-private-repos: "github.com/babylonlabs-io/imagination-repo-to-test,github.com/babylonlabs-io/babylon-private"
 
   docker_pipeline:
     uses: babylonlabs-io/.github/.github/workflows/reusable_docker_pipeline.yml@v0.1.0
