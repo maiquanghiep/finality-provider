@@ -12,6 +12,7 @@ jobs:
       run-unit-tests: true
       run-integration-tests: true
       run-lint: true
+    secrets:
       go-private-token: ${{ secrets.GO_PRIVATE_TOKEN }}
 
   docker_pipeline:
