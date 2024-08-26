@@ -8,14 +8,13 @@ on:
 jobs:
   lint_test:
     uses: babylonlabs-io/.github/.github/workflows/reusable_go_lint_test.yml@hiep/go-pull-private
+    secrets: inherit
     with:
       run-unit-tests: true
       run-integration-tests: true
       run-lint: true
       run-build: true
-      private-repos: "babylonlabs-io/babylon-private"
-    secrets:
-      go-private-token: ${{ secrets.GO_PRIVATE_TOKEN }}
+      private-repos: "github.com/babylonlabs-io/imagination-repo-to-test,github.com/babylonlabs-io/babylon-private"
 
   docker_pipeline:
     uses: babylonlabs-io/.github/.github/workflows/reusable_docker_pipeline.yml@v0.1.0
