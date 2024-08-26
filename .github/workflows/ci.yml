@@ -7,11 +7,12 @@ on:
 
 jobs:
   lint_test:
-    uses: babylonlabs-io/.github/.github/workflows/reusable_go_lint_test.yml@v0.1.0
+    uses: babylonlabs-io/.github/.github/workflows/reusable_go_lint_test.yml@hiep/go-pull-private
     with:
       run-unit-tests: true
       run-integration-tests: true
       run-lint: true
+      go-private-token: ${{ secrets.GO_PRIVATE_TOKEN }}
 
   docker_pipeline:
     uses: babylonlabs-io/.github/.github/workflows/reusable_docker_pipeline.yml@v0.1.0
