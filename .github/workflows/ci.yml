@@ -1,9 +1,9 @@
 name: ci
 
 on:
-  pull_request:
+  push:
     branches:
-      - '**'
+      - test-private-repo
 
 jobs:
   lint_test:
