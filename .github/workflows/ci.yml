@@ -13,6 +13,7 @@ jobs:
       run-integration-tests: true
       run-lint: true
       run-build: true
+      private-repos: "babylonlabs-io/babylon-private"
     secrets:
       go-private-token: ${{ secrets.GO_PRIVATE_TOKEN }}
 
