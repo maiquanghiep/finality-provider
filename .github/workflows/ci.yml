@@ -12,6 +12,7 @@ jobs:
       run-unit-tests: true
       run-integration-tests: true
       run-lint: true
+      run-build: true
     secrets:
       go-private-token: ${{ secrets.GO_PRIVATE_TOKEN }}
 
